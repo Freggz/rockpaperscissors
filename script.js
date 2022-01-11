@@ -40,24 +40,24 @@ function game() {
     console.log("Round 1:")
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
-    playerSelection = prompt("Let's play rock, paper, scissors. GO!");
+    playerSelection = prompt("Round 2 - go!");
     playRound(playerSelection, computerSelection)
     console.log("Round 2:")
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
-    playerSelection = prompt("Let's play rock, paper, scissors. GO!");
+    playerSelection = prompt("Round 3 - go!");
     playRound(playerSelection, computerSelection)
     console.log("Round 3:")
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
-    playerSelection = prompt("Let's play rock, paper, scissors. GO!");
+    playerSelection = prompt("Round 4 - go!");
     playRound(playerSelection, computerSelection)
     console.log("Round 4:")
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
-    playerSelection = prompt("Let's play rock, paper, scissors. GO!");
+    playerSelection = prompt("Final round!!");
     playRound(playerSelection, computerSelection)
-    console.log("Round 5:")
+    console.log("Final Score:")
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
     if (playerScore > computerScore) {
