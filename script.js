@@ -29,8 +29,10 @@ if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper') {
 } else if (playerSelection.toLowerCase() === 'scissors' && computerSelection === 'rock') {
     computerScore++;
     return "You lose! Rock beats scissors.";
+} else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'rock' || playerSelection.toLowerCase() === 'scissors' && computerSelection === 'scissors' || playerSelection.toLowerCase() === 'paper' && computerSelection === 'paper') {
+    return "Tie";
 } else 
-    return "Tie."
+    return "Please enter rock, paper or scissors.";
 }
 
 //Create function to play 5 rounds and declare a winner
