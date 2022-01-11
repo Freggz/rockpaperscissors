@@ -37,24 +37,40 @@ if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper') {
 
 function game() {
     playRound(playerSelection, computerSelection)
+    console.log("Round 1:")
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
+    playerSelection = prompt("Let's play rock, paper, scissors. GO!");
     playRound(playerSelection, computerSelection)
+    console.log("Round 2:")
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
+    playerSelection = prompt("Let's play rock, paper, scissors. GO!");
     playRound(playerSelection, computerSelection)
+    console.log("Round 3:")
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
+    playerSelection = prompt("Let's play rock, paper, scissors. GO!");
     playRound(playerSelection, computerSelection)
+    console.log("Round 4:")
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
+    playerSelection = prompt("Let's play rock, paper, scissors. GO!");
     playRound(playerSelection, computerSelection)
+    console.log("Round 5:")
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
+    if (playerScore > computerScore) {
+        return "Nice job - you won!"
+    } else if (playerScore === computerScore) {
+        return "Tie game!"
+    } else {
+        return "Better luck next time!"
+    }
 }
 
 //Create function for player to input rock, paper or scissors
-const playerSelection = prompt("Let's play rock, paper, scissors. GO!");
+let playerSelection = prompt("Let's play rock, paper, scissors. GO!");
 const computerSelection = computerPlay();
 
 console.log(game());
