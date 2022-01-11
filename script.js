@@ -35,27 +35,28 @@ if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper') {
     return "Please enter rock, paper or scissors.";
 }
 
-//Create function to play 5 rounds and declare a winner
-function game () {
-    if (playerScore + computerScore <=5) {   
-        playRound(playerSelection, computerSelection)
-    } else if (playerScore + computerScore <=5) {
-        playRound(playerSelection, computerSelection)
-    } else if (playerScore + computerScore <=5) {
-        playRound(playerSelection, computerSelection)
-    } else if (playerScore + computerScore <=5) {
-        playRound(playerSelection, computerSelection)
-    } else if (playerScore + computerScore <=5) {
-        playRound(playerSelection, computerSelection)
-    } else
-        return "Final Score: Player: ${playerScore}, ${computerScore}"
+function game() {
+    playRound(playerSelection, computerSelection)
+    console.log("Player Score: ", playerScore) 
+    console.log("Computer Score: ",computerScore)
+    playRound(playerSelection, computerSelection)
+    console.log("Player Score: ", playerScore) 
+    console.log("Computer Score: ",computerScore)
+    playRound(playerSelection, computerSelection)
+    console.log("Player Score: ", playerScore) 
+    console.log("Computer Score: ",computerScore)
+    playRound(playerSelection, computerSelection)
+    console.log("Player Score: ", playerScore) 
+    console.log("Computer Score: ",computerScore)
+    playRound(playerSelection, computerSelection)
+    console.log("Player Score: ", playerScore) 
+    console.log("Computer Score: ",computerScore)
 }
 
 //Create function for player to input rock, paper or scissors
 const playerSelection = prompt("Let's play rock, paper, scissors. GO!");
 const computerSelection = computerPlay();
 
-console.log(playRound(playerSelection, computerSelection));
-console.log("Player Score: ", playerScore) 
-console.log("Computer Score: ",computerScore)
+console.log(game());
+
 
