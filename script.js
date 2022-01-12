@@ -30,47 +30,47 @@ if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper') {
     computerScore++;
     return "You lose! Rock beats scissors.";
 } else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'rock' || playerSelection.toLowerCase() === 'scissors' && computerSelection === 'scissors' || playerSelection.toLowerCase() === 'paper' && computerSelection === 'paper') {
-    return "Tie";
+    return "Draw - you picked the same option as the computer.";
 } else 
     return "Please enter rock, paper or scissors.";
 }
 
 function game() { 
     computerSelection = computerPlay();
-    console.log("Round 1:")
-    console.log(playRound(playerSelection, computerSelection))
-    console.log("Player Score: ", playerScore) 
-    console.log("Computer Score: ",computerScore)
+    console.log("Round 1:");
+    console.log(playRound(playerSelection, computerSelection));
+    console.log("Player Score: ", playerScore);
+    console.log("Computer Score: ",computerScore);
     playerSelection = prompt("Round 2 - go!");
     computerSelection = computerPlay();
-    console.log("Round 2:")
-    console.log(playRound(playerSelection, computerSelection))
-    console.log("Player Score: ", playerScore) 
-    console.log("Computer Score: ",computerScore)
+    console.log("Round 2:");
+    console.log(playRound(playerSelection, computerSelection));
+    console.log("Player Score: ", playerScore);
+    console.log("Computer Score: ",computerScore);
     playerSelection = prompt("Round 3 - go!");
     computerSelection = computerPlay();
-    console.log("Round 3:")
-    console.log(playRound(playerSelection, computerSelection))
-    console.log("Player Score: ", playerScore) 
-    console.log("Computer Score: ",computerScore)
+    console.log("Round 3:");
+    console.log(playRound(playerSelection, computerSelection));
+    console.log("Player Score: ", playerScore);
+    console.log("Computer Score: ",computerScore);
     playerSelection = prompt("Round 4 - go!");
     computerSelection = computerPlay();
-    console.log("Round 4:")
-    console.log(playRound(playerSelection, computerSelection))
-    console.log("Player Score: ", playerScore) 
-    console.log("Computer Score: ",computerScore)
+    console.log("Round 4:");
+    console.log(playRound(playerSelection, computerSelection));
+    console.log("Player Score: ", playerScore);
+    console.log("Computer Score: ",computerScore);
     playerSelection = prompt("Final round!!");
     computerSelection = computerPlay();
-    console.log("Final Score:")
-    console.log(playRound(playerSelection, computerSelection))
-    console.log("Player Score: ", playerScore) 
-    console.log("Computer Score: ",computerScore)
+    console.log("Final Score:");
+    console.log(playRound(playerSelection, computerSelection));
+    console.log("Player Score: ", playerScore);
+    console.log("Computer Score: ",computerScore);
     if (playerScore > computerScore) {
-        return "Nice job - you won!"
+        return "Nice job - you won!";
     } else if (playerScore === computerScore) {
-        return "Tie game!"
+        return "Tie game!";
     } else {
-        return "Better luck next time!"
+        return "Better luck next time!";
     }
 }
 
