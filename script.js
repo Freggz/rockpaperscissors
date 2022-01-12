@@ -35,29 +35,34 @@ if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper') {
     return "Please enter rock, paper or scissors.";
 }
 
-function game() {
-    playRound(playerSelection, computerSelection)
+function game() { 
+    computerSelection = computerPlay();
     console.log("Round 1:")
+    console.log(playRound(playerSelection, computerSelection))
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
     playerSelection = prompt("Round 2 - go!");
-    playRound(playerSelection, computerSelection)
+    computerSelection = computerPlay();
     console.log("Round 2:")
+    console.log(playRound(playerSelection, computerSelection))
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
     playerSelection = prompt("Round 3 - go!");
-    playRound(playerSelection, computerSelection)
+    computerSelection = computerPlay();
     console.log("Round 3:")
+    console.log(playRound(playerSelection, computerSelection))
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
     playerSelection = prompt("Round 4 - go!");
-    playRound(playerSelection, computerSelection)
+    computerSelection = computerPlay();
     console.log("Round 4:")
+    console.log(playRound(playerSelection, computerSelection))
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
     playerSelection = prompt("Final round!!");
-    playRound(playerSelection, computerSelection)
+    computerSelection = computerPlay();
     console.log("Final Score:")
+    console.log(playRound(playerSelection, computerSelection))
     console.log("Player Score: ", playerScore) 
     console.log("Computer Score: ",computerScore)
     if (playerScore > computerScore) {
@@ -71,7 +76,7 @@ function game() {
 
 //Create function for player to input rock, paper or scissors
 let playerSelection = prompt("Let's play rock, paper, scissors. GO!");
-const computerSelection = computerPlay();
+let computerSelection = computerPlay();
 
 console.log(game());
 
