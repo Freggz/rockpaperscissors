@@ -29,7 +29,9 @@ if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper') {
 } else if (playerSelection.toLowerCase() === 'scissors' && computerSelection === 'rock') {
     computerScore++;
     return "You lose! Rock beats scissors.";
-} else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'rock' || playerSelection.toLowerCase() === 'scissors' && computerSelection === 'scissors' || playerSelection.toLowerCase() === 'paper' && computerSelection === 'paper') {
+} else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 
+        'rock' || playerSelection.toLowerCase() === 'scissors' && computerSelection === 'scissors' 
+        || playerSelection.toLowerCase() === 'paper' && computerSelection === 'paper') {
     return "Draw - you picked the same option as the computer.";
 } else 
     return "Please enter rock, paper or scissors.";
